@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("assets/bg.jpg");
+   background-size: cover;
+   background-position: center;
+   }
+   nav{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+   }
+  
+   
+
+
+   .logo {
+    font-family: 'Arial Black', sans-serif; /* Choose a strong, bold font */
+    font-size: 3em; /* Adjust size as needed */
+    font-weight: 900; /* Make it extra bold */
+    text-transform: uppercase; /* Optional: Make it all caps */
+    letter-spacing: 2px; /* Adjust spacing between letters */
+    color: #f8fdff; /* Default text color */
+  }
+  
+   .nav-links li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 1.5rem;
+  }
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.75rem 1.25rem; /* Increased padding */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  color: #333;
+  background-color: azure;
+  transform: translateY(-3px) scale(1.05); /* Subtle lift and scale on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+.register-btn:hover,
+.register-btn:focus {
+  background-color: rgb(39, 71, 215);
+  transform: translateY(-3px) scale(1.05); /* Subtle lift and scale on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+   
+
+  .register-btn {
+    background-color: azure;
+    color: #000;
+    padding: 0.75rem 1.5rem; /* Increased padding */
+    border-radius: 25px; /* More rounded corners */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added transform and box-shadow transitions */
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  }
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 21%;
+}
+.search-bar{
+    background-color: #fff;
+    width: 85%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search-bar form{
+  margin-right: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form label{
+    font-style: initial;
+    color: #272525;
+margin-left: 20px;
+margin-right: 20px;
+
+}
+.search-bar  form input{
+    display: block;
+    margin: 4px;
+     padding: 5px;
+  border-color: #333;
+    border-radius: 14px;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    margin-top: 25px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;    
+}
+.search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+}
+.location{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
+
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+.exclusive{
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 30px;
+    
+}
+
+.exclusive div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.exclusive div{
+    position: relative;
+}
+.exclusive div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+/*trending place*/
+
+.subtitle{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr)); 
+    grid-gap: 30px;   
+    margin-bottom: 30px;
+}
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.trending h3{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+/**group packages***/
+
+.bta{
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, #3f2321, transparent),url(assets/group\ packages.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+  }
+  .bta h3{
+      font-size: 4vw;
+      line-height: 5.3vw;
+      font-weight: 500;
+  }
+  .bta p{
+      font-size: 18px;
+      margin: 10px 0;
+      }
+      .bta-btn{
+          background: #ff5361;
+          color: #fff;
+          text-decoration: none;
+          padding: 12px 30px;
+          border-radius: 8px;
+          margin-top: 20px;
+          display: inline-block;
+      }
+
+/****group packages END here***/
+
+.cta{
+  background-image: linear-gradient(to right, #3f2321, transparent),url(assets/hotel\ veiw.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 5%;
+  color: #fff;
+}
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+    }
+    .cta-btn{
+        background: #ff5361;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .gta{
+        margin-top: 10px;
+        background-image: linear-gradient(to right, #3f2321, transparent),url(assets/flight.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        padding: 5%;
+        color: #fff;}
+ .gta h3{
+            font-size: 4vw;
+            line-height: 5.3vw;
+            font-weight: 500;
+        }
+        .gta p{
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .gta-btn{
+            background: #ff5361;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        /*about msg*/
+        .about-msg{
+            text-align: center;
+            margin: 80px 0;
+            color: #333;
+            font-size: 17px;
+        }
+        .about-msg h2{
+            font-weight: 500;
+            font-size: 28px;
+            margin-bottom: 30px ;
+
+        }
+     /*-----footer----*/
+     .footer{
+        margin: 80px 0 10px;
+        text-align: center;
+    
+     }
+     .footer a{
+        text-align: none;
+        color: #999;
+        font-size: 22px;
+        margin:0 10px;
+        }
+        .footer hr{
+            margin: 20px 0;
+        }
+       .large:hover{
+        cursor:pointer;
+           transform: translateY(-5px) scale(1) ; /* Subtle lift and scale on hover */
+         
+       }
