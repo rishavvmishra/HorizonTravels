@@ -9,6 +9,10 @@
    
 </head>
 <body>
+  <div class="overlay" id="overlay">
+    <p>This site is under construction🚧.</p>
+    <p>Copyright © Horizon Tech , Rishav Mishra</p>
+</div>
     
     <div class="header">
       <nav>
@@ -25,7 +29,7 @@
       </nav>
 
       <div class="container">
-        <h1>Find Your Next Stay</h1>    
+        <h1 class="firstveiw">Find Your Next Stay</h1>    
         <div class="search-bar">
           <form action="horizon.php">
             <div >
@@ -48,7 +52,7 @@
               <label for="Guest">Guest</label>
            <input type="number" placeholder="no.of Guest">
              </div>
-             <button type="submit"><img src="assets/search.png" alt=""></button>
+             <button class="search button" type="submit"> 🔎</button>
             </form>
           </div>
         </div>
@@ -62,6 +66,7 @@
       <span>
         <h3>Shimla</h3>
         <p>starts at @10000rs</p>
+      
       </span>
       </div>
       <div class="large">
@@ -169,5 +174,11 @@
 
 </div>
     
+<script>
+  // JavaScript to remove the overlay after 3 seconds
+  setTimeout(() => {
+      document.getElementById("overlay").style.display = "none";
+  }, 4000);
+</script>
 </body>
 </html>

@@ -22,13 +22,20 @@
 
 
    .logo {
-    font-family: 'Arial Black', sans-serif; /* Choose a strong, bold font */
-    font-size: 3em; /* Adjust size as needed */
-    font-weight: 900; /* Make it extra bold */
-    text-transform: uppercase; /* Optional: Make it all caps */
-    letter-spacing: 2px; /* Adjust spacing between letters */
-    color: #f8fdff; /* Default text color */
+    padding: 3px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #c96040, #d9e256);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgba(213, 140, 15, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   }
+  .logo:hover {
+   
+    text-shadow: 0px 0px 20px rgb(228, 130, 18);
+}
   
    .nav-links li{
     list-style: none;
@@ -215,7 +222,16 @@ margin-right: 20px;
           border-radius: 8px;
           margin-top: 20px;
           display: inline-block;
+          
       }
+      .bta-btn:hover{
+        cursor: pointer;
+        transform: scale(1.5); /* Shrinks the image slightly */
+        transition: transform 0.5s ease-out;
+      }
+        
+        
+      
 
 /****group packages END here***/
 
@@ -244,7 +260,21 @@ margin-right: 20px;
         border-radius: 8px;
         margin-top: 20px;
         display: inline-block;
+        
+
+
     }
+    .cta-btn:hover{
+        cursor: pointer;
+        transform: scale(1.5); /* Shrinks the image slightly */
+        transition: transform 0.5s ease-out;
+
+    }
+
+
+
+
+
 
     .gta{
         margin-top: 10px;
@@ -272,6 +302,12 @@ margin-right: 20px;
             margin-top: 20px;
             display: inline-block;
         }
+        .gta-btn:hover{  cursor: pointer;
+            transform: scale(1.5); /* Shrinks the image slightly */
+            transition: transform 0.5s ease-out;
+
+        }
+
         /*about msg*/
         .about-msg{
             text-align: center;
@@ -301,7 +337,30 @@ margin-right: 20px;
             margin: 20px 0;
         }
        .large:hover{
-        cursor:pointer;
-           transform: translateY(-5px) scale(1) ; /* Subtle lift and scale on hover */
-         
-       }
+        cursor: pointer;
+        transform: scale(0.8); /* Shrinks the image slightly */
+        transition: transform 0.5s ease-out;
+          }
+        .search button{
+            font-size: 10px;
+        }
+        .firstveiw:hover{
+            
+            transform: scale(0.8); /* Shrinks the image slightly */
+            transition: transform 0.7s ease-out;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            z-index: 1000;
+        }
