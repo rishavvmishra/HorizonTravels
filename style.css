@@ -405,3 +405,66 @@ margin-right: 20px;
 .header .about-msg {
     transition: opacity 0.3s ease-in-out;
 }        
+
+@media (max-width: 768px) {
+    .header {
+        min-height: 80vh; /* Reduce header height */
+        padding: 20px 5%; /* Adjust padding */
+    }
+
+    nav {
+        flex-direction: column; /* Stack items in nav */
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0; /* Reduce spacing */
+    }
+
+    .logo {
+        font-size: 2em; /* Reduce logo size */
+    }
+
+    .search-bar {
+        width: 95%; /* Full width on mobile */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .search-bar form {
+        flex-direction: column; /* Stack form inputs */
+        gap: 10px;
+    }
+
+    .search-bar form input {
+        width: 100%; /* Full width for inputs */
+    }
+
+    .exclusive, .trending {
+        grid-template-columns: 1fr; /* One column layout */
+        grid-gap: 15px;
+    }
+
+    .bta, .cta, .gta {
+        padding: 10%;
+        text-align: center; /* Center text */
+    }
+
+    .bta h3, .cta h3, .gta h3 {
+        font-size: 6vw; /* Adjust font size */
+    }
+
+    .bta p, .cta p, .gta p {
+        font-size: 14px;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 14px;
+    }
+}
