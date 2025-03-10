@@ -205,6 +205,12 @@ margin-right: 20px;
     padding: 5%;
     color: #fff;
   }
+ .bta:hover{
+    transform: scale(0.9); /* Shrinks the image slightly */
+    transition: transform 0.5s ease-out;
+ }
+
+
   .bta h3{
       font-size: 4vw;
       line-height: 5.3vw;
@@ -243,6 +249,12 @@ margin-right: 20px;
   padding: 5%;
   color: #fff;
 }
+.cta:hover{
+    transform: scale(0.9); /* Shrinks the image slightly */
+    transition: transform 0.5s ease-out;
+}
+
+
 .cta h3{
     font-size: 4vw;
     line-height: 5.3vw;
@@ -284,6 +296,10 @@ margin-right: 20px;
         border-radius: 10px;
         padding: 5%;
         color: #fff;}
+        .gta:hover{
+            transform: scale(0.9); /* Shrinks the image slightly */
+            transition: transform 0.5s ease-out;
+        }
  .gta h3{
             font-size: 4vw;
             line-height: 5.3vw;
